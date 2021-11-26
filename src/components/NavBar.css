@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+img{
+    width: 100px;
+}
+ul{
+    width: 80%;
+    
+}
+li{
+    display: inline-block;
+    width: 20%;
+    
+
+}
