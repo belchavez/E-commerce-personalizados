@@ -3,6 +3,7 @@ import './NavBar.css'
 import logo from '../logo-no-final.png';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button'
+import CartWidget from './CartWidget/CartWidget';
 
 
 export default function NavBar(){
@@ -18,8 +19,7 @@ export default function NavBar(){
                 <li><Button variant="contained">Contacto</Button></li>
                 <li><Button variant="contained">Ayuda</Button></li>
             </ul>
-            
-
+            <CartWidget/>
         </nav>
         </AppBar>
     )
