@@ -1,9 +1,9 @@
 import React from 'react';
-import './NavBar.css'
-import logo from '../logo-no-final.png';
+import './NavBar.css';
+import Logo from '../../logo-no-final.png';
 import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button'
-import CartWidget from './CartWidget/CartWidget';
+import Button from '@mui/material/Button';
+import CartWidget from '../CartWidget/CartWidget.js'
 
 
 export default function NavBar(){
@@ -11,7 +11,7 @@ export default function NavBar(){
         <AppBar position="static">
         <nav>
             <div className="container-logo">
-            <img src={logo}/>
+            <img src={Logo}/>
             </div>
             <ul>
                 <li><Button variant="contained">Inicio</Button></li>
