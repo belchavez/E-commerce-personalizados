@@ -1,30 +1,42 @@
-import Products from "../products/products"
+import ItemCount from "../ItemCount/ItemCount"
 const ItemListContainer = () =>{
     const dataproducts =[
 
         {
             name: "Gorra volver al futuro",
             price: 1200,
-            stock: 5,
+            stock:10
         },
         {
             name: "Remera Dark",
             price: 1500,
-            stock: 2,
+            stock:10
 
-        }
+        },
+        {
+            name: "Remera Dark",
+            price: 1500,
+            stock: 10
+
+        },
+        {
+            name: "Remera Dark",
+            price: 1500,
+            stock: 10
+
+        },
     ]
     return(
         <>
-            <h2> Ultimas unidades </h2>
-            {dataproducts.map((product) =>{
-                return(
-                    <Products name= {product.name} price= {product.price} stock={product.stock}/>
+        <h2>Ultimas Unidades</h2>
+        <ItemCount stock ={10}/>
+        <ItemCount stock ={5}/>
+        <ItemCount stock ={3}/>
+        <ItemCount stock ={2}/>
+        </>
 
-                )
-            })}
-        </>        
     )
+   
 }  
 
 

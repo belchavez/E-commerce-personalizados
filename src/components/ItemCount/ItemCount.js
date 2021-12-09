@@ -1,26 +1,45 @@
 import React, { useState } from 'react';
 
-export default function ItemCount() {
+/*
+const Products = ({name,price}) =>{
+    
+  return(
+      <div>
+          <p>Nombre: {name}</p>
+          <p>Precio: {price}</p>
+          
+      </div>
+  )
+}
+export default Products;*/
 
-    const [click, setClick] = useState(0);
+export default function ItemCount({stock}) {
+
+    const [itemCount, setItemCount] = useState(0);
 
     const updateItem = () =>{
-        setClick(click + 1);
+      if (itemCount <stock){
+
+        setItemCount(itemCount + 1);
     }
+  }
     const removeItem = () => {
-        if (click >=1){
-        setClick(click - 1);
+        if (itemCount >=1){
+        setItemCount(itemCount - 1);
         }
 
     }
 
   return (
     <div>
-      <h1>Productos {click} </h1>
-
+      <h2>Gorra</h2>
+      <h1>{itemCount}</h1>
       <button onClick={updateItem}>+</button>
       <button onClick={removeItem}>-</button>
+      <p>Stock: {stock}</p>
       <button >Agregar al carrito</button>
+      
+     
 
 
     </div>
